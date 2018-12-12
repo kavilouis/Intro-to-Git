@@ -8,7 +8,7 @@
 - Where all our snapshots are stored
 
 
-# Commands
+# Commands [STAGING AREA]
 - Important commands
     git init - initialize a git repository .git (a hidden directory)
     git status
@@ -33,3 +33,18 @@
     If you want files to be properly hidden, you will have to change folder permissions using chmod. For example
        chmod 770 folder_name
     will prevent users (except the owner and people in the group) from listing the whole directory "folder_name".
+
+- Removing files ( after adding using git add )
+    git reset HEAD filename 
+
+- Ignoring files
+    https://help.github.com/articles/ignoring-files/
+    
+    If you create a file in your repository named .gitignore, 
+    Git uses it to determine which files and directories to ignore, 
+    before you make a commit.
+    
+    If you already have a file checked in, and you want to ignore it, Git will not ignore the file if you add a rule later. 
+    In those cases, you must untrack the file first, by running the following command in your terminal:
+        git rm --cached FILENAME
+    
