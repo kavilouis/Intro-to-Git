@@ -59,3 +59,18 @@
     In those cases, you must untrack the file first, by running the following command in your terminal:
         git rm --cached FILENAME
 
+----------------------------------------------------------------------------------------
+# Git Branches
+Read this : https://git-scm.com/book/en/v1/Git-Branching-What-a-Branch-Is
+            https://git-scm.com/book/en/v1/Git-Branching-Basic-Branching-and-Merging
+--------------------------------------------------------------------------
+- Listing All branches
+    git branch // * branchname - * means the current branch
+
+- Adding a branch
+    git checkout -b <newbranch>
+
+- Changing branches
+    git checkout <branchname>
+
+- Merging a branch
